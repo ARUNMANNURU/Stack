@@ -16,7 +16,6 @@ public class BalancedParanthesis {
     {
         int top=-1;
         char items[] = new char[100];
- 
         void push(char x) 
         {
             if (top == 99) 
@@ -28,7 +27,6 @@ public class BalancedParanthesis {
                 items[++top] = x;
             }
         }
- 
         char pop() 
         {
             if (top == -1) 
@@ -43,15 +41,13 @@ public class BalancedParanthesis {
                 return element;
             }
         }
- 
         boolean isEmpty() 
         {
             return (top == -1) ? true : false;
         }
     }
      
-    /* Returns true if character1 and character2
-       are matching left and right Parenthesis */
+    /* Returns true if character1 and character2 are matching left and right Parenthesis */
     static boolean isMatchingPair(char character1, char character2)
     {
        if (character1 == '(' && character2 == ')')
